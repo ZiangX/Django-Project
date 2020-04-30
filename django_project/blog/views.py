@@ -16,8 +16,10 @@ posts = [
 	}
 ]
 
+
+
 def home(request):
-	#"Context must be a dict rather than list." So we have to make dic and fill the posts list in it
+	# Note:"Context must be a dict rather than list." So we have to make dic and fill the posts list in it
 	context = {
 		'posts': posts
 	}
