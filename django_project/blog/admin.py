@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Post #Since they are under the same directory
 
-# Register your models here.
+#Note: regirster the Post model to admin site
+admin.site.register(Post)
