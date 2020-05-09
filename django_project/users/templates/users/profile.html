@@ -1,0 +1,6 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <!-- Note:Remember that the user is not something that we actually have to pass into the context. 
+    that is something that is built into Django that represents the current logged in user -->
+    <h2>{{user}}</h2>
+{% endblock content %}
