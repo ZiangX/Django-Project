@@ -16,7 +16,7 @@ def register(request):
             username = form.cleaned_data.get('username')
             #Note: The flash message will send with form data to templates, you can use the passed message in template by saying messages
             messages.success(request, f'Account create for {username}!')
-            return redirect('blog-home') #Note: This is the name we give to our url pattern of blog home page
+            return redirect('login') #Note: This is the name we give to our url pattern of blog home page
     else:
         form = UserRegisterForm()
     return render(request, 'users/register.html', {'form': form})
